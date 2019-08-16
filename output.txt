@@ -1,0 +1,61 @@
+Welcome !
+------------------------------------------------------------
+Please select a question to get an anwser from the database:
+[1] What are the most popular three articles of all time? 
+[2] Who are the most popular article authors of all time? 
+[3] On which days did more than 1% of requests lead to errors?  
+[4] Quit the program  
+1
+|Title                                             |Visits              |
+---------------------------------------------------+---------------------
+|Candidate is jerk, alleges rival                  |              338647|
+|Bears love berries, alleges bear                  |              253801|
+|Bad things gone, say good people                  |              170098|
+|Goats eat Google's lawn                           |               84906|
+|Trouble for troubled troublemakers                |               84810|
+|Balloon goons doomed                              |               84557|
+|There are a lot of bears                          |               84504|
+|Media obsessed with bears                         |               84383|
+
+
+press any key!
+ 
+------------------------------------------------------------
+Please select a question to get an anwser from the database:
+[1] What are the most popular three articles of all time? 
+[2] Who are the most popular article authors of all time? 
+[3] On which days did more than 1% of requests lead to errors?  
+[4] Quit the program  
+2
+|Author                                            |Visits              |
+---------------------------------------------------+---------------------
+|Ursula La Multa                                   |              507594|
+|Rudolf von Treppenwitz                            |              423457|
+|Anonymous Contributor                             |              170098|
+|Markoff Chaney                                    |               84557|
+
+
+press any key!
+
+------------------------------------------------------------
+Please select a question to get an anwser from the database:
+[1] What are the most popular three articles of all time? 
+[2] Who are the most popular article authors of all time? 
+[3] On which days did more than 1% of requests lead to errors?  
+[4] Quit the program  
+3
+|Date                                              |Errors              |
+---------------------------------------------------+---------------------
+|17-Jul-2016                                       |  2.2626862468027260|
+
+
+press any key!
+
+------------------------------------------------------------
+Please select a question to get an anwser from the database:
+[1] What are the most popular three articles of all time? 
+[2] Who are the most popular article authors of all time? 
+[3] On which days did more than 1% of requests lead to errors?  
+[4] Quit the program  
+4
+Good bye!
