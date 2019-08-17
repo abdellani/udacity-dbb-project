@@ -1,13 +1,19 @@
-import psycopg2
+#!/usr/bin/env python
+# import psycopg2
 
 
 def run_sql(col1, col2, cmd):
-    conn = psycopg2.connect(
-        database="news",
-        user="postgres",
-        host="127.0.0.1",
-        password="docker"
-    )
+    try:
+        conn = psycopg2.connect(
+            database="news",
+            user="postgres",
+            host="127.0.0.1",
+            password="docker"
+        )
+    except Exception:
+        print "Unable to connnect to the database !"
+        print "Please check your credentiels / DB server is running"
+        return
     cur = conn.cursor()
     cur.execute(cmd)
     results = cur.fetchall()
@@ -40,21 +46,6 @@ order by id_count desc
 ;
 '''
 mostPopularAuthorsSql = '''
-drop view if exists top_author_ids;
-create view top_author_ids
-as
-select articles.author as id,count(l.id) as id_count
-from
-  articles
-left join
-  (select  substring(path from 10) as slug,id
-  from log where method='GET') as l
-on
-  articles.slug=l.slug
-group by
-  articles.author
-order by id_count desc
-;
 select authors.name,id_count
 from authors left join top_author_ids on  authors.id= top_author_ids.id;
 '''
